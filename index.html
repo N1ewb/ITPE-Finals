@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="vewport" content="width-device-width, initial-scale-1.0">
+		<link rel="stylesheet" href="style.css">
+		<title>ITPE Finals</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Lato&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="index-container">
+			<header>
+				<div class="nav-bar">
+					<div class="col">
+						<p class="logo-title">Nathan Lucero</p>
+					</div>
+					<div class="col">
+						<div class="nav-links">
+							<a href="#">Home</a>
+							<div class="dropdown show">
+								<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Creational Patterns
+								</a>
+							
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+									<a class="dropdown-item" href="#creational-pattern">Creational Design Pattern</a>
+									<a class="dropdown-item" href="#abstract-factory">Abstract Factory</a>
+									<a class="dropdown-item" href="#builder">Builder</a>
+									<a class="dropdown-item" href="#prototype">Prototype</a>
+									<a class="dropdown-item" href="#singleton">Singleton</a>
+								</div>
+							</div>
+
+							<div class="dropdown show">
+								<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Structural Pattern
+								</a>
+							
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+									<a class="dropdown-item" href="#structural-pattern">Structural Design Patterns</a>
+									<a class="dropdown-item" href="#adapter">Adapter</a>
+									<a class="dropdown-item" href="#bridge">Bridge</a>
+								</div>
+							</div>
+
+							<div class="dropdown show">
+								<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Theme
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+									<button class="dropdown-item" onclick="changeTheme('dark')">Dark</button>
+									<button class="dropdown-item" onclick="changeTheme('light')">Light</button>
+								</div>
+							</div>
+							
+							
+						</div>
+
+					</div>
+				</div>
+			</header>
+			<div class="main-content-container">
+				
+					<section class="design-pattern">
+						<div class="img-wrapper">
+							
+						</div>
+						<div class="design-pattern-description">
+							<h1>Design Patterns</h1>
+							<p>Design patterns are typical solutions to common problems
+	in software design. Each pattern is like a blueprint
+	that you can customize to solve a particular
+	design problem in your code.</p>
+						</div>
+					</section>
+					<div id="Creational-patterns">
+						<section class="design-creational-pattern" id="creational-pattern">
+							<div class="title">
+								<h1>Creational Design Patterns</h1>
+							</div>
+							<div class="pattern-content-container">
+								<div class="pattern-description">
+									<p>Creational design patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.</p>
+								</div>
+								<div class="creational-pattern-patterns">
+									<p>Abstract Factory <img src="https://refactoring.guru/images/patterns/cards/abstract-factory-mini.png" height="80px" width="100px"></p>
+									<p>Builder <img src="https://refactoring.guru/images/patterns/cards/builder-mini.png" height="80px" width="100px"></p>
+									<p>Prototype <img src="https://refactoring.guru/images/patterns/cards/prototype-mini.png" height="80px" width="100px"></p>
+									<p>Singleton <img src="https://refactoring.guru/images/patterns/cards/singleton-mini.png" height="80px" width="100px"></p>
+								</div>
+							</div>
+						</section>
+					<section class="design abstract-factory" id="abstract-factory">
+						<div class="title">
+							<h1>ABSTRACT FACTORY</h1>
+						</div>
+						<div class="pattern-description">
+							<img src="https://refactoring.guru/images/patterns/content/abstract-factory/abstract-factory-en-3x.png" alt="abstract factory" height="200px" width="230px">
+							<p><strong>Abstract Factory</strong> is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.</p>
+							<a href="https://lucerodragdrop.netlify.app">Drag Drop Game Inventory Made by Me, that incoporates Abstract Factory</a>
+						</div>
+						<iframe height="500" style="width: 50%;" scrolling="no" title="Abstract Factory" src="https://codepen.io/Nathaniel-Lucero/embed/abXqMar?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+	  See the Pen <a href="https://codepen.io/Nathaniel-Lucero/pen/abXqMar">
+	  Abstract Factory</a> by Nathaniel Lucero (<a href="https://codepen.io/Nathaniel-Lucero">@Nathaniel-Lucero</a>)
+	  on <a href="https://codepen.io">CodePen</a>.
+	</iframe>
+					</section>
+					<section class="design builder-factory" id="builder">
+						<div class="title">
+							<h1>BUILDER FACTORY</h1>
+						</div>
+						<div class="pattern-description">
+							<img src="https://refactoring.guru/images/patterns/content/builder/builder-en-3x.png" alt="builder" height="200px" width="230px">
+							<p><strong>Builder</strong> is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.</p>
+						</div>
+						<iframe height="500" style="width: 50%;" scrolling="yes" title="Untitled" src="https://codepen.io/Nathaniel-Lucero/embed/RwvMVQq?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+	  See the Pen <a href="https://codepen.io/Nathaniel-Lucero/pen/RwvMVQq">
+	  Untitled</a> by Nathaniel Lucero (<a href="https://codepen.io/Nathaniel-Lucero">@Nathaniel-Lucero</a>)
+	  on <a href="https://codepen.io">CodePen</a>.
+	</iframe>
+					</section>
+					<section class="design prototype-factory" id="prototype">
+						<div class="title">
+							<h1>PROTOTYPE FACTORY</h1>
+						</div>
+						<div class="pattern-description">
+							<img src="https://refactoring.guru/images/patterns/content/prototype/prototype-3x.png" alt="prototype" height="200px" width="230px">
+							<p>Prototype is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.</p>
+						</div>
+						<iframe height="500" style="width: 50%;" scrolling="no" title="Untitled" src="https://codepen.io/Nathaniel-Lucero/embed/WNLVJBe?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+	  See the Pen <a href="https://codepen.io/Nathaniel-Lucero/pen/WNLVJBe">
+	  Untitled</a> by Nathaniel Lucero (<a href="https://codepen.io/Nathaniel-Lucero">@Nathaniel-Lucero</a>)
+	  on <a href="https://codepen.io">CodePen</a>.
+	</iframe>
+					</section>
+					<section class="design singleton-factory" id="singleton">
+						<div class="title">
+							<h1>SINGLETON</h1>
+						</div>
+						<div class="pattern-description">
+							<img src="https://refactoring.guru/images/patterns/content/singleton/singleton.png?id=108a0b9b5ea5c4426e0afa4504491d6f" alt="singleton" height="200px" width="230px">
+							<p>Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.</p>
+						</div>
+						<iframe height="500" style="width: 50%;" scrolling="no" title="Singleton" src="https://codepen.io/Nathaniel-Lucero/embed/abXKXJv?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+							See the Pen <a href="https://codepen.io/Nathaniel-Lucero/pen/abXKXJv">
+							Singleton</a> by Nathaniel Lucero (<a href="https://codepen.io/Nathaniel-Lucero">@Nathaniel-Lucero</a>)
+							on <a href="https://codepen.io">CodePen</a>.
+						  </iframe>
+					</section>
+				</div>
+				<div id="Structural-patterns">
+					<section class="design sitatuational-pattern" id="structural-pattern">
+						<div class="title">
+							<h1>Structural Design Patterns</h1>
+						</div>
+						<div class="pattern-description">
+							<p>Structural Design Patterns are Design Patterns that ease the design by identifying a simple way to realize relationships between entities.</p>
+						</div>
+						<div class="strutural-pattern-patterns">
+						
+						</div>
+					</section>
+					<section  class="design adapter" id="adapter">
+						<div class="title">
+							<h1>Adapter</h1>
+						</div>
+						<div class="pattern-description">
+							<img src="https://refactoring.guru/images/patterns/content/adapter/adapter-en.png?id=11ef6ae6177291834323e3f918c47cd2" alt="adapter" height="200px" width="230px"/>
+							<p>Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.</p>
+						</div>
+						<iframe height="500" style="width: 50%;" scrolling="no" title="Adapter" src="https://codepen.io/N1ewb/embed/BaMqgvq?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+							See the Pen <a href="https://codepen.io/N1ewb/pen/BaMqgvq">
+							Adapter</a> by N1ewb (<a href="https://codepen.io/N1ewb">@N1ewb</a>)
+							on <a href="https://codepen.io">CodePen</a>.
+						  </iframe>
+					</section>
+					<section  class="design bridge" id="bridge">
+						<div class="title">
+							<h1>Bridge</h1>
+						</div>
+						<div class="pattern-description">
+							<img src="https://refactoring.guru/images/patterns/content/bridge/bridge.png?id=bd543d4fb32e11647767301581a5ad54" alt="bridge" height="200px" width="230px"/>
+							<p>Bridge is a structural design pattern that lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.</p>
+						</div>
+						<iframe height="500" style="width: 50%;" scrolling="no" title="Bridge" src="https://codepen.io/N1ewb/embed/vYbVqqR?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+							See the Pen <a href="https://codepen.io/N1ewb/pen/vYbVqqR">
+							Bridge</a> by N1ewb (<a href="https://codepen.io/N1ewb">@N1ewb</a>)
+							on <a href="https://codepen.io">CodePen</a>.
+						  </iframe>
+					</section>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
